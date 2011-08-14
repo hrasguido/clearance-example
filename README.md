@@ -1,7 +1,7 @@
 Clearance Example
 =================
 
-Autentificación de usuarios usando clearance
+Autentificación de usuarios usando [clearance](https://github.com/thoughtbot/clearance).
 
 Requerimientos
 --------------
