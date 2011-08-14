@@ -1,9 +1,11 @@
-== Clearance Example
+Clearance Example
+=================
 
-Rails 3.1.0.rc5
-ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
+Autentificación de usuarios usando clearance
 
 Requerimientos
 --------------
 
-[Clearance](https://github.com/thoughtbot/clearance).
+* ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
+* Rails 3.1.0.rc5
+* [clearance](https://github.com/thoughtbot/clearance).
