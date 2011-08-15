@@ -110,6 +110,8 @@ GEM
       rack (~> 1.0)
       tilt (!= 1.3.0, ~> 1.1)
     sqlite3 (1.3.4)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
     term-ansicolor (1.0.6)
     therubyracer (0.9.3)
       libv8 (~> 3.3.10)
@@ -137,6 +139,7 @@ DEPENDENCIES
   rails (= 3.1.0.rc5)
   sass-rails (~> 3.1.0.rc)
   sqlite3
+  sqlite3-ruby
   therubyracer
   turn
   uglifier
