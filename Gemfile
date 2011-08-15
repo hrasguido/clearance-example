@@ -35,3 +35,4 @@ end
 gem 'execjs'
 gem 'therubyracer'
 gem 'clearance'
+gem 'heroku'
