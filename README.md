@@ -6,8 +6,8 @@ Autentificación de usuarios usando [clearance](https://github.com/thoughtbot/cl
 Requerimientos
 --------------
 
-* [ruby] (http://www.ruby-lang.org/)
-* [Rails] (http://www.rubyonrails.org/)
+* [ruby] (http://www.ruby-lang.org/).
+* [Rails] (http://www.rubyonrails.org/).
 * [clearance](https://github.com/thoughtbot/clearance).
 
 Versiones
