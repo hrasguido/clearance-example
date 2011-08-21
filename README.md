@@ -20,4 +20,7 @@ Versiones
 * sqlite3 (1.3.4)
 * sqlite3-ruby (1.3.3)
 
-
+Demo
+----------
+* Default user: usuario@prueba.com/123456
+* [http://clearance-example.heroku.com/](http://clearance-example.heroku.com/)
