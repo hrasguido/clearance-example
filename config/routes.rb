@@ -1,4 +1,9 @@
 Bla::Application.routes.draw do
+  resources :jobs
+
+  #Clearance
+  match '/sign_out' =>  'clearance/sessions#destroy'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +53,7 @@ Bla::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'jobs#index'
 
   # See how all your routes lay out with "rake routes"
 

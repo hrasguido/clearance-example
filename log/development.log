@@ -8,3 +8,1275 @@ Started GET "/rails/info/properties" for 127.0.0.1 at 2011-08-15 00:01:01 -0400
   Processing by Rails::InfoController#properties as */*
 Rendered inline template (40.1ms)
 Completed 200 OK in 210ms (Views: 209.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (96.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (99.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDieselClearanceUsers (20110820010804)
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "encrypted_password" varchar(128), "salt" varchar(128), "confirmation_token" varchar(128), "remember_token" varchar(128), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110820010804')
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_remember_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-08-19 21:13:12 -0400
+Served asset /rails.png - 200 OK (45ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-19 21:13:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (69.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-19 21:15:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-19 21:15:36 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:15:37 -0400
+Compiled ~/Proyectos/clearance-example/app/assets/stylesheets/application.css  (1ms)  (pid 23339)
+Compiled ~/Proyectos/clearance-example/app/assets/stylesheets/application.css  (0ms)  (pid 23339)
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:15:37 -0400
+Compiled ~/Proyectos/clearance-example/app/assets/javascripts/application.js  (58ms)  (pid 23339)
+Compiled ~/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.13/vendor/assets/javascripts/jquery.js  (2ms)  (pid 23339)
+Compiled ~/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.13/vendor/assets/javascripts/jquery_ujs.js  (1ms)  (pid 23339)
+Compiled ~/Proyectos/clearance-example/app/assets/javascripts/application.js  (0ms)  (pid 23339)
+Served asset /application.js - 200 OK (122ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-19 21:15:53 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:15:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:15:53 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2011-08-19 21:18:17 -0400
+
+ActionController::RoutingError (uninitialized constant WorkersController):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-19 21:18:37 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:18:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:18:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-19 21:18:40 -0400
+  Processing by Clearance::UsersController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/users/_form.html.erb (2.2ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/users/new.html.erb within layouts/application (55.9ms)
+Completed 200 OK in 359ms (Views: 76.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:18:41 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:18:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2011-08-19 21:18:45 -0400
+  Processing by Clearance::PasswordsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/passwords/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:18:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:18:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-19 21:19:48 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:19:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:19:48 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-19 21:19:50 -0400
+  Processing by Clearance::UsersController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/users/_form.html.erb (1.5ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/users/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 46ms (Views: 26.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:19:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:19:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2011-08-19 21:19:52 -0400
+  Processing by Clearance::PasswordsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/passwords/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:19:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:19:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-08-19 21:20:04 -0400
+  Processing by Clearance::UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"usuario@prueba.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'usuario@prueba.com' LIMIT 1[0m
+  [1m[35mSQL (58.4ms)[0m  INSERT INTO "users" ("confirmation_token", "created_at", "email", "encrypted_password", "remember_token", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["confirmation_token", nil], ["created_at", Sat, 20 Aug 2011 01:20:04 UTC +00:00], ["email", "usuario@prueba.com"], ["encrypted_password", "6ccdc106bcd10fa8fa70358a6e2879b2950a3223"], ["remember_token", "2ed97139b506ca5abbaa4b665eb7ac8524deb9a9"], ["salt", "43f804a013b2dd37c76cb0b6df047f2f4b62622a"], ["updated_at", Sat, 20 Aug 2011 01:20:04 UTC +00:00]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 413ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-19 21:20:09 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:20:09 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:20:09 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-08-19 21:20:15 -0400
+  Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"usuario@prueba.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'usuario@prueba.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 73ms
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-19 21:20:23 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '2ed97139b506ca5abbaa4b665eb7ac8524deb9a9' LIMIT 1
+  [1m[36m (1.1ms)[0m  [1mUPDATE "users" SET "remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494', "updated_at" = '2011-08-20 01:20:23.321346' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 201ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-19 21:20:23 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-19 21:20:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-19 21:20:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDieselClearanceUsers (20110820010804)
+Migrating to CreateJobs (20110820012510)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110820012510')
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("jobs")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 22:52:15 -0400
+  Processing by JobsController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 2ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 22:52:15 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (94.5ms)
+Completed 200 OK in 306ms (Views: 305.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-08-20 22:52:16 -0400
+Compiled ~/Proyectos/clearance-example/app/assets/stylesheets/application.css  (4ms)  (pid 22935)
+Compiled ~/Proyectos/clearance-example/app/assets/stylesheets/jobs.css.scss  (24ms)  (pid 22935)
+Compiled ~/Proyectos/clearance-example/app/assets/stylesheets/scaffolds.css.scss  (27ms)  (pid 22935)
+Compiled ~/Proyectos/clearance-example/app/assets/stylesheets/application.css  (0ms)  (pid 22935)
+Served asset /application.css - 200 OK (143ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-20 22:52:16 -0400
+Compiled ~/Proyectos/clearance-example/app/assets/javascripts/application.js  (21ms)  (pid 22935)
+Compiled ~/Proyectos/clearance-example/app/assets/javascripts/jobs.js.coffee  (160ms)  (pid 22935)
+Compiled ~/Proyectos/clearance-example/app/assets/javascripts/application.js  (0ms)  (pid 22935)
+Served asset /application.js - 200 OK (360ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:52:27 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 2ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 22:52:27 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/clearance-0.12.0/app/views/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-08-20 22:52:35 -0400
+  Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"usuario@prueba.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'usuario@prueba.com' LIMIT 1[0m
+Redirected to http://localhost:3000/jobs/index
+Completed 302 Found in 226ms
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:52:35 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 20ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:53:44 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 66ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:54:23 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 20ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.4ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:54:24 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 22ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDieselClearanceUsers (20110820010804)
+Migrating to CreateJobs (20110820012510)
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("jobs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_remember_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:56:15 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 31ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:56:16 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 23ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:56:17 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 21ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id=index):
+  app/controllers/jobs_controller.rb:19:in `show'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/jobs/index" for 127.0.0.1 at 2011-08-20 22:57:23 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:56:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/jobs/" for 127.0.0.1 at 2011-08-20 22:57:25 -0400
+  Processing by JobsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 84ms (Views: 11.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 22:57:39 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36m (1.5ms)[0m  [1mUPDATE "users" SET "remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d', "updated_at" = '2011-08-21 02:57:39.298156' WHERE "users"."id" = 1[0m
+Completed 404 Not Found in 416ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 22:57:55 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:56:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 22:57:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 22:57:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 22:58:13 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:57:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 22:58:17 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 21ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:07:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:07:50 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:57:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:00 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 404 Not Found in 75ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:04 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 20ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:13 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:57:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:15 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 404 Not Found in 29ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:17 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 19ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:18 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 404 Not Found in 19ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:18 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 22ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:19 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 404 Not Found in 22ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:08:19 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 22ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:09:02 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:57:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.6ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:09:03 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 404 Not Found in 19ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:09:03 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 67ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:09:04 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 404 Not Found in 21ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:09:04 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 404 Not Found in 76ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"clearance/sessions"}):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:09:58 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:57:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:10:02 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:10:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:20 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:57:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2011-08-20 23:10:35 -0400
+
+ArgumentError (missing :action):
+  config/routes.rb:60:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:10:38 -0400
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:10:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:10:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:10:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:10:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:10:56 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 21ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:10:56 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:10:56 -0400
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:11:10 -0400
+  Processing by JobsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 24ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:11:11 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:11 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:11:13 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 20ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:11:13 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '8e677fa7f255293c2ba365f07118836d091d1494' LIMIT 1[0m
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:13 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-08-20 23:11:18 -0400
+  Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"usuario@prueba.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'usuario@prueba.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:11:18 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 10.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:18 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2011-08-20 23:11:22 -0400
+  Processing by JobsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d' LIMIT 1[0m
+Rendered jobs/_form.html.erb (12.2ms)
+Rendered jobs/new.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 96ms (Views: 70.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:22 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2011-08-20 23:11:29 -0400
+  Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "job"=>{"name"=>"job 01", "description"=>"description 01"}, "commit"=>"Create Job"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "jobs" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 21 Aug 2011 03:11:29 UTC +00:00], ["description", "description 01"], ["name", "job 01"], ["updated_at", Sun, 21 Aug 2011 03:11:29 UTC +00:00]]
+Redirected to http://localhost:3000/jobs/1
+Completed 302 Found in 190ms
+
+
+Started GET "/jobs/1" for 127.0.0.1 at 2011-08-20 23:11:29 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d' LIMIT 1
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered jobs/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 39ms (Views: 18.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:29 -0400
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2011-08-20 23:11:32 -0400
+  Processing by JobsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 40ms (Views: 19.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:32 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:11:35 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2011-08-20 23:11:43 -0400
+  Processing by Clearance::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '6a9876ea4c5c8f69084df3aa9383667af2972a1d' LIMIT 1
+  [1m[36m (1.3ms)[0m  [1mUPDATE "users" SET "remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36', "updated_at" = '2011-08-21 03:11:43.320079' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 163ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:11:43 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:43 -0400
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:11:54 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:54 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:11:54 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:55 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:11:57 -0400
+  Processing by JobsController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 1ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:11:57 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:11:57 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:14:04 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:04 -0400
+Served asset /defaults.js - 404 Not Found (98ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:14:06 -0400
+  Processing by JobsController#index as HTML
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 2ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2011-08-20 23:14:06 -0400
+  Processing by Clearance::SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:06 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-08-20 23:14:12 -0400
+  Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"usuario@prueba.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'usuario@prueba.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-20 23:14:12 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 40ms (Views: 19.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:12 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/jobs/1/edit" for 127.0.0.1 at 2011-08-20 23:14:14 -0400
+  Processing by JobsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered jobs/_form.html.erb (11.0ms)
+Rendered jobs/edit.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 44ms (Views: 23.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:15 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2011-08-20 23:14:17 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 39ms (Views: 18.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:17 -0400
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jobs/1" for 127.0.0.1 at 2011-08-20 23:14:19 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered jobs/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 46ms (Views: 19.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:19 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2011-08-20 23:14:22 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 39ms (Views: 19.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:14:22 -0400
+Served asset /defaults.js - 404 Not Found (52ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2011-08-20 23:15:39 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 44ms (Views: 21.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:15:40 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-20 23:15:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/jobs/1" for 127.0.0.1 at 2011-08-20 23:15:42 -0400
+  Processing by JobsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "jobs" WHERE "jobs"."id" = ?[0m  [["id", 1]]
+Redirected to http://localhost:3000/jobs
+Completed 302 Found in 219ms
+
+
+Started GET "/jobs" for 127.0.0.1 at 2011-08-20 23:15:43 -0400
+  Processing by JobsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 10.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:15:43 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-20 23:15:43 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2011-08-20 23:15:44 -0400
+  Processing by JobsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1
+Rendered jobs/_form.html.erb (11.2ms)
+Rendered jobs/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 88ms (Views: 21.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:15:44 -0400
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-20 23:15:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2011-08-20 23:15:50 -0400
+  Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "job"=>{"name"=>"job 01", "description"=>"description 01"}, "commit"=>"Create Job"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "jobs" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 21 Aug 2011 03:15:50 UTC +00:00], ["description", "description 01"], ["name", "job 01"], ["updated_at", Sun, 21 Aug 2011 03:15:50 UTC +00:00]]
+Redirected to http://localhost:3000/jobs/2
+Completed 302 Found in 406ms
+
+
+Started GET "/jobs/2" for 127.0.0.1 at 2011-08-20 23:15:50 -0400
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered jobs/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 91ms (Views: 18.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:15:50 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-20 23:15:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2011-08-20 23:15:53 -0400
+  Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ad497e72ce4c7099cec5fd6e425227bc2456fa36' LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 42ms (Views: 20.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-08-20 23:15:53 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/howar/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0.rc5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-08-20 23:15:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
