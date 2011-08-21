@@ -22,5 +22,5 @@ Versiones
 
 Demo
 ----------
-* Default user: usuario@prueba.com/123456
+* Default user: user@test.com.com/123456
 * [http://clearance-example.heroku.com/](http://clearance-example.heroku.com/)
